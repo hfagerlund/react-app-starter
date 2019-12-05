@@ -11,7 +11,7 @@ $ cd react-app-starter
 $ npm install
 $ npm run build
 $ npm run start
-# browse to http://localhost:8080/
+# browse to http://localhost:8080/build/index.htm
 ```
 
 ### Using Docker
@@ -29,7 +29,7 @@ $ sudo docker images
 # run the container
 $ sudo docker run -p 8000:80 my-react-app
 
-# browse to http://localhost:8000/
+# browse to http://localhost:8000/index.htm
 ```
 
 :tada:
