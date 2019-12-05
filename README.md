@@ -1,6 +1,8 @@
 # README
 
-[react-app-starter](https://github.com/hfagerlund/react-app-starter/) is a simple ('Dockerized') React app skeleton.
+[react-app-starter](https://github.com/hfagerlund/react-app-starter/) is a simple ('[Docker](https://www.docker.com/)ized') [React](https://reactjs.org/) app skeleton.
+
+Fork and modify this project as a time-saving and easy to understand starter for your own new [React](https://reactjs.org/) project.
 
 ## Quick Start
 ```
@@ -32,6 +34,15 @@ $ sudo docker run -p 8000:80 my-react-app
 
 :tada:
 
+## What's going on here?
+* **[React](https://reactjs.org/)**, **[react-dom](https://github.com/facebook/react/tree/master/packages/react-dom)** - These libraries are installed using **[npm](https://www.npmjs.com/)**, the package manager for **[Node.js](https://nodejs.org/en/)**: `$ npm i -S {react,react-dom}`
+* **[Babel](https://babeljs.io/)** - Compiles JSX into JavaScript (for rendering in the browser);
+* **[JSX](https://reactjs.org/docs/introducing-jsx.html)** - A syntax extension to JavaScript used for creating React 'elements';
+* **[Webpack](https://webpack.js.org/)** - Module bundler (ie. runs the code through **Babel** etc.);
+  * **[HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)** - Generates an HTML file to render the generated bundle.js file in the browser;
+* **[Docker](https://www.docker.com/)** - Locally built build artifacts are pushed into Docker for deployment (ie. the app is not built inside Docker).
+
+(All copyrights for the above remain with their respective owners.)
 - - -
 ## License
 Copyright (c) 2019 Heini Fagerlund. Licensed under the [BSD-3-Clause license](https://github.com/hfagerlund/react-app-starter/blob/master/LICENSE).
