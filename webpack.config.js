@@ -1,7 +1,7 @@
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
   template: __dirname + '/src/index.html',
-  filename: 'index.htm',
+  filename: 'home.html',
   inject: 'body'
 });
 
@@ -23,7 +23,7 @@ module.exports = {
   devServer: {
     publicPath: '/build/',
     open: true,
-    openPage: 'build/index.htm'
+    openPage: 'build/home.html'
   },
   plugins: [HTMLWebpackPluginConfig]
 };
