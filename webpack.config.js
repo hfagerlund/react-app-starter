@@ -22,8 +22,7 @@ module.exports = {
   },
   devServer: {
     publicPath: '/build/',
-    open: true,
-    openPage: 'build/home.html'
+    open: ['build/home.html']
   },
   plugins: [HTMLWebpackPluginConfig]
 };
