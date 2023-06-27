@@ -10,8 +10,8 @@
   "author": "Heini Fagerlund",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
