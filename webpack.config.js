@@ -21,7 +21,9 @@ module.exports = {
     path: __dirname + '/build'
   },
   devServer: {
-    publicPath: '/build/',
+    static: {
+      publicPath: '/build/',
+    },
     open: ['build/home.html']
   },
   plugins: [HTMLWebpackPluginConfig]
