@@ -29,7 +29,7 @@ module.exports = {
     publicPath: '/build/',
   },
   devServer: {
-  static: {
+    static: {
       directory: path.join(__dirname, '/'),
     },
     open: ['build/home.html']
