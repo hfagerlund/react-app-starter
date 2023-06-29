@@ -5,8 +5,15 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
   inject: 'body'
 });
 
+const path = require('path');
+
 module.exports = {
   entry: __dirname + '/src/index.jsx',
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
+  mode: 'development',
   module: {
     rules: [
       {
@@ -18,12 +25,14 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/build'
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/build/',
   },
   devServer: {
-    publicPath: '/build/',
-    open: true,
-    openPage: 'build/home.html'
+  static: {
+      directory: path.join(__dirname, '/'),
+    },
+    open: ['build/home.html']
   },
   plugins: [HTMLWebpackPluginConfig]
 };
