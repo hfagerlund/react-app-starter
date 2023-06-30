@@ -10,6 +10,7 @@
   "author": "Heini Fagerlund",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "json5": "^1.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "semver": "^7.5.2",
